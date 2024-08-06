@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 5  rem;
+    right: 1rem;
+}
+
+.hamburger .bar{
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    width: 40px;
+    height: 6px;
+    margin: 2px;
+}
+
+.nav-bar{
+    display: flex;
+    background-color: rgb(28, 35, 47);
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 13px;
+    flex-wrap: wrap;
+}
+
+.nav-bar img{
+    width: 100px;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+}
+
+.address img{
+    width:20px;
+    height: auto;
+}
+
+.search-bar{
+    display: flex;
+}
+
+.search-bar select{
+    padding: 7px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: aliceblue;
+}
+
+.search-bar input{
+    width: 90vh;
+    border: none;
+}
+
+.search-icon{
+    background-color: orange;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+.search-icon img{
+    width: 17px;
+}
+
+.dropdown .flag{
+    width: 20px;
+}
+
+.dropdown .down-arrow{
+    width: 10px;
+}
+
+.signin p img{
+    width: 10px;
+}
+
+.cart img{
+    width: 35px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#all{
+    display: flex;
+    align-items: center;
+}
+
+#all img{
+    width: 15px;
+    margin-right: 5px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(40, 51, 67);
+}
+
+nav ul{
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+
+
+nav ul li{
+    margin-left: 13px;
+    color: white;
+    font-size: 13px;
+}
+
+.right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    color: white;
+    width: 45vh;
+}
+
+
+.right-nav .lion{
+    width: 100px;
+}
+
+.right-nav #top-arrow{
+    width: 10px;
+}
+
+.heading{
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.prime{
+    height: 40px;
+}
+.prime img{
+    margin-top: 0;
+    width: 40px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main{
+    background-image: url('assets/background\ picture.png');
+    height: 90vh;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.parent-container{
+    display: flex;
+    /* margin-top:10%; */
+    justify-content: space-evenly;
+    
+}
+
+
+.container{
+    width: 22%;
+    background-color: white;
+    padding: 15px;
+    padding-right: 0;
+}
+
+.container h3{
+    margin-bottom: 10px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.flex-container div{
+    flex:50%;
+}
+
+.flex-container div p{
+    margin-bottom: 15px;
+}
+
+.flex-container div img{
+    width: 80%;
+    /* margin-right: 10%; */
+}
+
+.container a{
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.full{
+    padding-right: 15px;
+}
+
+.full img{
+    width: 100%;
+    height: 220px;
+}
+
+.signin-container{
+    width: 23%;
+    
+}
+
+#signin{
+    background-color: white;
+    padding: 20px;
+}
+
+#signin button{
+    width: 100%;
+    background-color: orange;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.signin-container img{
+    margin:10%;
+
+    width: 80%;
+}
+
+
+
+
+@media (max-width:600px) {
+    .hamburger{
+        display: flex;
+    }
+    .nav-bar{
+        align-items: none;
+    }
+    /* .nav-bar>div{
+        order: 2;
+    } */
+
+    .parent-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* margin-top: 500px; */
+        gap: 20px;
+        
+
+    }
+
+    .container{
+        width: 100%;
+    }
+    
+    .signin-container{
+        display: none;
+
+    }
+
+    .main{
+        height: 140vh;
+    }
+
+    .search-bar{
+        flex-basis: 100%;
+        width: 100%;
+        position: absolute;
+        top: 40px;
+    }
+    nav{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .nav-items{
+        display: none;
+        flex-direction: column;
+    }
+    .nav-items li{
+        margin: 5px;
+    }
+    .right-nav{
+        display: none;
+    }
+    .nav-items.active{
+        display: flex;
+    }
+}
